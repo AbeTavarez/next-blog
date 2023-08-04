@@ -10,7 +10,15 @@ export const siteTitle = "Next.js Sample Website";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div
+      className='
+      min-h-screen
+      flex
+      flex-col
+      justify-items-center
+      align-center
+      p-10'
+    >
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <meta
