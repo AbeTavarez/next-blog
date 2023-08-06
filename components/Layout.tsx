@@ -2,8 +2,11 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-const name = "Abe Tavarez";
-export const siteTitle = "Next.js Sample Website";
+import styles from "../components/Layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+
+const name = "Abraham Tavarez";
+export const siteTitle = "Abraham Tavarez's Personal Website";
 
 export default function Layout({
   children,
@@ -27,7 +30,7 @@ export default function Layout({
         <link rel='icon' href='/favicon.ico' />
         <meta
           name='description'
-          content='Learn how to build a personal website using Next.js'
+          content="Abraham Tavarez's personal website using Next.js"
         />
         <meta
           property='og:image'
