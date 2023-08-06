@@ -5,8 +5,8 @@ import Link from "next/link";
 import styles from "../components/Layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 
-const name = "Abe Tavarez";
-export const siteTitle = "Next.js Sample Website";
+const name = "Abraham Tavarez";
+export const siteTitle = "Abraham Tavarez's Personal Website";
 
 export default function Layout({
   children,
@@ -18,7 +18,7 @@ export default function Layout({
   return (
     <div
       className='
-      bg-slate-900
+      bg-stone-900
       min-h-screen
       flex
       flex-col
@@ -30,7 +30,7 @@ export default function Layout({
         <link rel='icon' href='/favicon.ico' />
         <meta
           name='description'
-          content='Learn how to build a personal website using Next.js'
+          content="Abraham Tavarez's personal website using Next.js"
         />
         <meta
           property='og:image'
@@ -42,18 +42,18 @@ export default function Layout({
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
 
-      <header className={styles.header}>
+      <header className=''>
         {home ? (
           <>
             <Image
               priority
               src='/images/profile.jpg'
-              className={utilStyles.borderCircle}
+              className=''
               height={144}
               width={144}
               alt=''
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className=''>{name}</h1>
           </>
         ) : (
           <>
@@ -61,14 +61,14 @@ export default function Layout({
               <Image
                 priority
                 src='/images/profile.jpg'
-                className={utilStyles.borderCircle}
+                className=''
                 height={108}
                 width={108}
                 alt=''
               />
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href='/' className={utilStyles.colorInherit}>
+            <h2 className=''>
+              <Link href='/' className=''>
                 {name}
               </Link>
             </h2>
@@ -77,7 +77,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className=''>
           <Link href='/'>← Back to home</Link>
         </div>
       )}
